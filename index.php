@@ -4,8 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internet Cafe Management</title>
-    <link rel="stylesheet"href="style.css">
+    
 </head>
+
+<style>
+    /* style.css */
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Main content styling */
+h1 {
+    text-align: left;
+    color: #333;
+    margin: 20px;
+}
+
+p {
+    text-align: left;
+    margin: 0 20px 20px 20px;
+}
+
+h2 {
+    text-align: left;
+    color: #333;
+    margin: 20px 0 10px 20px;
+}
+
+/* Sections styling */
+section {
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* About Us section styling */
+#about {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Us section styling */
+#contact {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+</style>
 <body>
     <!-- Navigation bar -->
     <div class="navbar">

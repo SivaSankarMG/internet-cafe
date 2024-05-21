@@ -156,8 +156,128 @@ $systems = getAvailableSystems($conn);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Now</title>
 </head>
+
+<style>
+    /* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #4CAF50;
+    padding: 20px 30px;
+    text-align: right;
+    color: white;
+    margin-bottom: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Main title styling */
+h1 {
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Subtitles styling */
+h2 {
+    color: #333;
+    text-align: left;
+    margin-top: 40px;
+}
+
+/* Form styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form select,
+form input[type="time"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    background-color: #fff;
+}
+
+td:empty {
+    background-color: #f9f9f9;
+}
+
+</style>
+
 <body>
-    <h1>Book a System</h1> <a href="dashboard.php" style="margin-left:300px;">Dashboard</a>
+
+    <header>
+        <a href="dashboard.php" style="margin-left:300px;">Dashboard</a>
+    </header>
+
+    <h1>Book a System</h1>
 
     <form method="post" action="book.php">
         <label for="system_id">Select System:</label>
